@@ -11,20 +11,21 @@
 def selection(iterable):
     """The algorithm proceeds by finding the smallest element in the
     unsorted sublist, exchanging it with the leftmost unsorted element
-    (putting it in sorted order), and moving the sublist boundaries 
+    (putting it in sorted order), and moving the sublist boundaries
     one element to the right"""
     sortit = 0
     while sortit != len(iterable):
-        for thevals in range(sortit, len(iterable)): 
+        for thevals in range(sortit, len(iterable)):
             if iterable[thevals] < iterable[sortit]:
-                iterable[sortit],iterable[thevals] = iterable[
-                thevals],iterable[sortit]  
-        sortit = sortit+1
-    return iterable 
+                iterable[sortit], iterable[thevals] = iterable[
+                    thevals], iterable[sortit]
+        sortit = sortit + 1
+    return iterable
+
 
 def quick(iterable):
-    """Quicksort first divides a large array into two smaller sub-arrays: 
-    the low elements and the high elements. 
+    """Quicksort first divides a large array into two smaller sub-arrays:
+    the low elements and the high elements.
     Quicksort can then recursively sort the sub-arrays"""
     smaller = []
     pivotlist = []
