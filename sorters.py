@@ -3,7 +3,7 @@
 """Sorts data."""
 
 
-import util
+# import util
 
 # print util.get_random(3)
 
